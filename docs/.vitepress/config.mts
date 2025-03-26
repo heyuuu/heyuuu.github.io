@@ -17,6 +17,21 @@ export default defineConfig({
     },
   },
 
+  head: [
+    [
+      "script",
+      {},
+      `window._hmt = window._hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?dda4b5640f34067b7039a6aabbce6fab";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+      `,
+    ],
+  ],
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     siteTitle: "",
